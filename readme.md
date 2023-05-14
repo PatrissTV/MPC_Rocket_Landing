@@ -2,6 +2,7 @@
 
 Two examples provided for lossless convexification. Use anaconda to install ipopt and necessary packages. There is a conda.yml file with all the versions of the packages I used. The most important ones are:
 
+      - python==3.11.3
       - casadi==3.6.1
       - ply==3.11
       - pyomo==6.5.0

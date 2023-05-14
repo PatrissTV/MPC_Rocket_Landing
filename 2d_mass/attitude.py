@@ -21,10 +21,9 @@ class Attitude:
         self.N = N
         self.dt = dt
     def deriv(self,x,u,t): 
-        return vertcat(x[1],    # dot x  
-                    u[0],    # dot y
-                    1 + u[0]) # dot J #rewritten such that free time T is lower bounded. Too strict conditions on final time and states lead to infeasibility due to discretization.
-                              # minimize time and thrust
+        return vertcat(x[1],    #theta 
+                    u[0],    # dot theta
+                    1) # dot J #rewritten such that free time T is lower bounded. This is done such that we always find a feasible solution, but maybe more time is required.
     def create_opti(self):
         opti = Opti() # Optimization problem
         # ---- decision variables ---------
