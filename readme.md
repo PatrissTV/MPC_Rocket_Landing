@@ -14,3 +14,5 @@ You can generate 3d trajectories with lossless convexification in the folder los
 You can also test the lossless convexification on a 2d trajectory in the folder lossless2d. This one uses casadi with RK45 for translational motion and Euler Forward for attitude. Simply open the notebook and run all cells.
 
 Used repository from Igor Shvab to generate animation: https://github.com/Igor-Shvab/Rocket_soft_landing
+
+You can read the paper here: https://github.com/PatrissTV/MPC_Rocket_Landing/blob/main/Optimal_Control_Project.pdf
